@@ -1,16 +1,16 @@
 {
-  "name": "nuxt-starter",
-  "description": "A nuxt project startup template",
+  "name": "js-convert-yaml",
+  "description": "Convert javascript and yaml to each other",
   "author": "liting-yes <luz.liting@gmail.com> (https://liting.ink/)",
   "license": "MIT",
-  "homepage": "https://github.com/liting-yes/nuxt-starter#readme",
+  "homepage": "https://github.com/liting-yes/js-convert-yaml#readme",
   "bugs": {
-    "url": "https://github.com/liting-yes/nuxt-starter/issues"
+    "url": "https://github.com/liting-yes/js-convert-yaml/issues"
   },
   "keywords": [
-    "nuxt",
-    "template",
-    "starter"
+    "javascript",
+    "yaml",
+    "convert"
   ],
   "scripts": {
     "build": "nuxt build",
