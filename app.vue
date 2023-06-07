@@ -41,7 +41,7 @@ function switchTheme(e: MouseEvent) {
   <div class="h-screen w-screen bg-slate-50 text-slate-900" dark="bg-slate-800 text-slate-100">
     <nav class="fixed h-16 w-full flex items-center justify-between border-b-2 border-gray-1 border-solid px-8 backdrop-blur-md" dark="border-slate-700">
       <NuxtLink to="/">
-        <span class="text-xl font-semibold">Nuxt Starter</span>
+        <span class="text-xl font-bold font-smiley">js-convert-yaml</span>
       </NuxtLink>
       <div class="cursor-pointer">
         <span v-show="$colorMode.value === 'light'" class="i-ic:outline-light-mode text-2xl" @click="switchTheme" />

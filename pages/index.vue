@@ -1,45 +1,68 @@
+<script setup lang="ts">
+import { parse, stringify } from 'yaml'
+
+const JsEditorRef = ref()
+const YamlEditorRef = ref()
+
+const focusPos = ref<'js' | 'yaml'>()
+
+function handleJsFocus() {
+  focusPos.value = 'js'
+}
+function handleYamlFocus() {
+  focusPos.value = 'yaml'
+}
+
+function handleJsChange(val: string) {
+  if (focusPos.value !== 'js')
+    return
+
+  let newVal: any
+
+  try {
+    newVal = eval(`(${val})`)
+  }
+  catch (e) {
+    newVal = val
+  }
+  const yamlVal = stringify(newVal)
+  YamlEditorRef.value?.setContent(yamlVal)
+}
+function handleYamlChange(val: string) {
+  if (focusPos.value !== 'yaml')
+    return
+  const newVal = JSON.stringify(parse(val), null, 2)
+  JsEditorRef.value?.setContent(newVal)
+}
+
+const colorMode = useColorMode()
+watch(() => colorMode.value, (val) => {
+  if (val === 'dark')
+    JsEditorRef.value?.setTheme('vs-dark')
+  else
+    JsEditorRef.value?.setTheme('vs')
+})
+</script>
+
 <template>
-  <div class="flex justify-center pt-16">
-    <div class="prose">
-      <h1 class="font-smiley">
-        Nuxt Starter
-      </h1>
-      <p>A nuxt project startup template</p>
-      <h2>Installed Modules</h2>
-      <ul>
-        <NuxtLink to="https://nuxt.com/modules/eslint" target="__blank">
-          <li>@nuxtjs/eslint-module</li>
-        </NuxtLink>
-        <NuxtLink to="https://nuxt.com/modules/unocss" target="__blank">
-          <li>@unocss/nuxt</li>
-        </NuxtLink>
-        <NuxtLink to="https://nuxt.com/modules/image" target="__blank">
-          <li>@nuxt/image-edge</li>
-        </NuxtLink>
-        <NuxtLink to="https://nuxt.com/modules/nuxtlabs-ui" target="__blank">
-          <li>@nuxthq/ui</li>
-        </NuxtLink>
-        <NuxtLink to="https://nuxt.com/modules/color-mode" target="__blank">
-          <li>@nuxtjs/color-mode</li>
-        </NuxtLink>
-        <NuxtLink to="https://nuxt.com/modules/stylelint" target="__blank">
-          <li>@nuxtjs/stylelint-module</li>
-        </NuxtLink>
-        <NuxtLink to="https://nuxt.com/modules/fontaine" target="__blank">
-          <li>@nuxtjs/fontaine</li>
-        </NuxtLink>
-        <NuxtLink to="https://nuxt.com/modules/vueuse" target="__blank">
-          <li>@vueuse/nuxt</li>
-        </NuxtLink>
-        <NuxtLink to="https://nuxt.com/modules/lodash" target="__blank">
-          <li>nuxt-lodash</li>
-        </NuxtLink>
-      </ul>
-      <h2>Features</h2>
-      <ul>
-        <li>code lint with eslint and @antfu/eslint-config</li>
-        <li>commitlint</li>
-      </ul>
+  <div class="h-full flex justify-center">
+    <div class="h-full w-full flex justify-between">
+      <div class="h-full w-3/7">
+        <h2 class="my-4 text-center font-semibold font-smiley">
+          JavaScript
+        </h2>
+        <ClientOnly>
+          <MonacoEditor ref="JsEditorRef" language="javascript" @on-change-text="handleJsChange" @on-focus-text="handleJsFocus" />
+        </ClientOnly>
+      </div>
+      <div class="h-full w-3/7">
+        <h2 class="my-4 text-center font-semibold font-smiley">
+          Yaml
+        </h2>
+        <ClientOnly>
+          <MonacoEditor ref="YamlEditorRef" language="yaml" @on-change-text="handleYamlChange" @on-focus-text="handleYamlFocus" />
+        </ClientOnly>
+      </div>
     </div>
   </div>
 </template>

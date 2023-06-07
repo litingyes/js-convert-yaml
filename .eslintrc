@@ -1,3 +1,6 @@
 {
-  "extends":["@antfu", "@unocss"]
+  "extends":["@antfu", "@unocss"],
+  "rules": {
+    "no-eval": 0
+  }
 }
