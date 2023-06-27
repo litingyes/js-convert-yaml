@@ -50,7 +50,7 @@
     "lint-staged": "^13.2.2",
     "monaco-editor": "^0.39.0",
     "nuxt": "^3.5.2",
-    "nuxt-lodash": "^2.4.1",
+    "nuxt-lodash": "^2.5.0",
     "sass": "^1.63.6",
     "simple-git-hooks": "^2.8.1",
     "stylelint": "^15.6.2",
