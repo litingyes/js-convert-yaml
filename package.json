@@ -51,7 +51,7 @@
     "monaco-editor": "^0.39.0",
     "nuxt": "^3.5.2",
     "nuxt-lodash": "^2.4.1",
-    "sass": "^1.62.1",
+    "sass": "^1.63.6",
     "simple-git-hooks": "^2.8.1",
     "stylelint": "^15.6.2",
     "stylelint-config-recommended-scss": "^12.0.0",
