@@ -49,7 +49,7 @@
     "inquirer": "8",
     "lint-staged": "^13.2.3",
     "monaco-editor": "^0.40.0",
-    "nuxt": "^3.6.1",
+    "nuxt": "^3.6.2",
     "nuxt-lodash": "^2.5.0",
     "sass": "^1.63.6",
     "simple-git-hooks": "^2.8.1",
