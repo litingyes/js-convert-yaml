@@ -48,7 +48,7 @@
     "eslint": "^8.44.0",
     "inquirer": "8",
     "lint-staged": "^13.2.3",
-    "monaco-editor": "^0.39.0",
+    "monaco-editor": "^0.40.0",
     "nuxt": "^3.6.1",
     "nuxt-lodash": "^2.5.0",
     "sass": "^1.63.6",

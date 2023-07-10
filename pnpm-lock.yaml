@@ -74,8 +74,8 @@ devDependencies:
     specifier: ^13.2.3
     version: 13.2.3
   monaco-editor:
-    specifier: ^0.39.0
-    version: 0.39.0
+    specifier: ^0.40.0
+    version: 0.40.0
   nuxt:
     specifier: ^3.6.1
     version: 3.6.1(@types/node@18.16.19)(eslint@8.44.0)(sass@1.63.6)(stylelint@15.9.0)(typescript@5.1.6)
@@ -7149,8 +7149,8 @@ packages:
       ufo: 1.1.2
     dev: true
 
-  /monaco-editor@0.39.0:
-    resolution: {integrity: sha512-zhbZ2Nx93tLR8aJmL2zI1mhJpsl87HMebNBM6R8z4pLfs8pj604pIVIVwyF1TivcfNtIPpMXL+nb3DsBmE/x6Q==}
+  /monaco-editor@0.40.0:
+    resolution: {integrity: sha512-1wymccLEuFSMBvCk/jT1YDW/GuxMLYwnFwF9CDyYCxoTw2Pt379J3FUhwy9c43j51JdcxVPjwk0jm0EVDsBS2g==}
     dev: true
 
   /mri@1.2.0:
