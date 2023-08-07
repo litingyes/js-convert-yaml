@@ -74,8 +74,8 @@ devDependencies:
     specifier: ^13.2.3
     version: 13.2.3
   monaco-editor:
-    specifier: ^0.40.0
-    version: 0.40.0
+    specifier: ^0.41.0
+    version: 0.41.0
   nuxt:
     specifier: ^3.6.5
     version: 3.6.5(@types/node@18.17.0)(eslint@8.46.0)(sass@1.64.1)(stylelint@15.10.2)(typescript@5.1.6)
@@ -1987,7 +1987,7 @@ packages:
       deepmerge: 4.3.1
       is-builtin-module: 3.2.1
       is-module: 1.0.0
-      resolve: 1.22.2
+      resolve: 1.22.3
       rollup: 3.25.3
     dev: true
 
@@ -4717,7 +4717,7 @@ packages:
     dependencies:
       debug: 3.2.7
       is-core-module: 2.12.1
-      resolve: 1.22.2
+      resolve: 1.22.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6981,8 +6981,8 @@ packages:
       ufo: 1.1.2
     dev: true
 
-  /monaco-editor@0.40.0:
-    resolution: {integrity: sha512-1wymccLEuFSMBvCk/jT1YDW/GuxMLYwnFwF9CDyYCxoTw2Pt379J3FUhwy9c43j51JdcxVPjwk0jm0EVDsBS2g==}
+  /monaco-editor@0.41.0:
+    resolution: {integrity: sha512-1o4olnZJsiLmv5pwLEAmzHTE/5geLKQ07BrGxlF4Ri/AXAc2yyDGZwHjiTqD8D/ROKUZmwMA28A+yEowLNOEcA==}
     dev: true
 
   /mri@1.2.0:
@@ -7210,7 +7210,7 @@ packages:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
     dependencies:
       hosted-git-info: 2.8.9
-      resolve: 1.22.2
+      resolve: 1.22.3
       semver: 5.7.1
       validate-npm-package-license: 3.0.4
     dev: true
@@ -7819,7 +7819,7 @@ packages:
       postcss: 8.4.27
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
-      resolve: 1.22.2
+      resolve: 1.22.3
     dev: true
 
   /postcss-import@15.1.0(postcss@8.4.27):
@@ -7831,7 +7831,7 @@ packages:
       postcss: 8.4.27
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
-      resolve: 1.22.2
+      resolve: 1.22.3
     dev: true
 
   /postcss-js@4.0.1(postcss@8.4.27):
@@ -9313,7 +9313,7 @@ packages:
       postcss-load-config: 4.0.1(postcss@8.4.27)(ts-node@10.9.1)
       postcss-nested: 6.0.1(postcss@8.4.27)
       postcss-selector-parser: 6.0.13
-      resolve: 1.22.2
+      resolve: 1.22.3
       sucrase: 3.32.0
     transitivePeerDependencies:
       - ts-node
