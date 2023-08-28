@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^0.52.7
     version: 0.52.7(postcss@8.4.28)(vite@4.4.9)(webpack@5.85.1)
   '@unocss/reset':
-    specifier: ^0.55.2
-    version: 0.55.2
+    specifier: ^0.55.3
+    version: 0.55.3
   '@vueuse/core':
     specifier: ^10.4.1
     version: 10.4.1(vue@3.3.4)
@@ -3120,8 +3120,8 @@ packages:
     resolution: {integrity: sha512-TJW2BaGGQoh0OSDd22Ti8bZ/Ds3YMGT8aBxNPkcyhesH4fCJeWK+rwsAc5g8CS/wp9OdLS8P4Jy9k2Yg/GfrVQ==}
     dev: true
 
-  /@unocss/reset@0.55.2:
-    resolution: {integrity: sha512-paInTGIhtI96fcJGZWbkPLW/7qiTlHxSbEIs1HGHcbf3WbwNuKrJUvKlQAhUs2HILNKhvsTXQl05Os8gtinLEA==}
+  /@unocss/reset@0.55.3:
+    resolution: {integrity: sha512-zl3mogr3z6huA5CHZggOljoYFQDTidEw5T6pGPahfHB5qS9DH0UGozg5T9UtYWiidHL3xqyv6ZU27nyIMnlnhg==}
     dev: true
 
   /@unocss/scope@0.52.7:
