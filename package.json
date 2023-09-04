@@ -24,7 +24,7 @@
     "prepare": "npx simple-git-hooks"
   },
   "dependencies": {
-    "yaml": "^2.3.1"
+    "yaml": "^2.3.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.41.0",
