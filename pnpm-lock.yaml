@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^17.7.1
     version: 17.7.1(commitizen@4.3.0)(inquirer@8.2.5)
   '@iconify/json':
-    specifier: ^2.2.113
-    version: 2.2.113
+    specifier: ^2.2.117
+    version: 2.2.117
   '@nuxt/image-edge':
     specifier: 1.0.0-28101255.bece998
     version: 1.0.0-28101255.bece998
@@ -1289,8 +1289,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify/json@2.2.113:
-    resolution: {integrity: sha512-PjTsmdIrn1gxfVfHw7VJ81wsVFMHP7/pAfxfyD+CX639Y4cao4xEnUPXU4pMDV0/S4thLGIHTlADAhCJsoJXxA==}
+  /@iconify/json@2.2.117:
+    resolution: {integrity: sha512-JJO8TzYJHq1geopQOOO2B1n5D0brls9RUcgaZ9+B8qpkJ9FZrwLv0gd50lySLqVEruhp8WJg1ujULispbVcOpw==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.1
@@ -4823,6 +4823,7 @@ packages:
 
   /end-of-stream@1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
+    requiresBuild: true
     dependencies:
       once: 1.4.0
     dev: true
@@ -5592,6 +5593,7 @@ packages:
 
   /fs-constants@1.0.0:
     resolution: {integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==}
+    requiresBuild: true
     dev: true
 
   /fs-extra@11.1.1:
